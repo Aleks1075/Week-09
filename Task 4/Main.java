@@ -17,5 +17,20 @@ public class Main {
         Random r=new Random();
         int randomNumber=r.nextInt(arr.length);
         System.out.println(arr[randomNumber]);
+
+        //4.d
+        numbers(5);
+
+        }
+        public static void numbers(int n) {
+        if(n < 0) {
+            System.out.println("Done!");
+        } else {
+            System.out.println(n);
+            n--;
+            numbers(n);
+
+        }
+        }
+
     }
-}
