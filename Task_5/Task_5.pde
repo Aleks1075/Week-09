@@ -23,16 +23,17 @@ void setup()
 
 void draw()
 {
- //5.e 
+  //5.e 
   if(board[i][j] == 0)
   {
     fill(0);
-  }
-  
- //5.d
- for(int i = 0; i<board.length; i++){
-   for(int j = 0; j<board[i].length; j++){
+  } 
+ 
+  //5.d
+ for(int i = 0; i<8; i++){
+   for(int j = 0; j<8; j++){
  rect(i*sideLength, j*sideLength, sideLength, sideLength);
    }
  }
+
 }
