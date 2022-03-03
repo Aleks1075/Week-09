@@ -24,14 +24,16 @@ void setup()
 void draw()
 {
   //5.e 
-  if(board[i][j] == 0)
-  {
-    fill(0);
-  } 
+   
  
   //5.d
  for(int i = 0; i<8; i++){
    for(int j = 0; j<8; j++){
+     if ((i + j + 1) % 2 == 0) {
+        fill(255, 255, 255); // white
+      } else {
+        fill(0, 0, 0); // black
+      }
  rect(i*sideLength, j*sideLength, sideLength, sideLength);
    }
  }
